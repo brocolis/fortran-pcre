@@ -1,0 +1,9 @@
+name = "fortran-pcre"
+version = "0.1.0"
+license = "MIT"
+author = "Carlos Une"
+maintainer = "brocolis@eml.cc"
+copyright = "2021 Carlos Une"
+
+[library]
+source-dir="src"
