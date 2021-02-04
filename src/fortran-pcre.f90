@@ -51,4 +51,36 @@ end interface
 private
 public :: pcre_compile, pcre_exec, pcre_study, pcre_free_study, pcre_free
 
+! pcre_compile options
+integer(kind=c_int), parameter, public :: PCRE_ANCHORED = 16
+integer(kind=c_int), parameter, public :: PCRE_AUTO_CALLOUT = 16384
+integer(kind=c_int), parameter, public :: PCRE_BSR_ANYCRLF = 8388608
+integer(kind=c_int), parameter, public :: PCRE_BSR_UNICODE = 16777216
+integer(kind=c_int), parameter, public :: PCRE_CASELESS = 1
+integer(kind=c_int), parameter, public :: PCRE_DOLLAR_ENDONLY = 32
+integer(kind=c_int), parameter, public :: PCRE_DOTALL = 4
+integer(kind=c_int), parameter, public :: PCRE_DUPNAMES = 524288
+integer(kind=c_int), parameter, public :: PCRE_EXTENDED = 8
+integer(kind=c_int), parameter, public :: PCRE_EXTRA = 64
+integer(kind=c_int), parameter, public :: PCRE_FIRSTLINE = 262144
+integer(kind=c_int), parameter, public :: PCRE_JAVASCRIPT_COMPAT = 33554432
+integer(kind=c_int), parameter, public :: PCRE_MULTILINE = 2
+integer(kind=c_int), parameter, public :: PCRE_NEVER_UTF = 65536
+integer(kind=c_int), parameter, public :: PCRE_NEWLINE_ANY = 4194304
+integer(kind=c_int), parameter, public :: PCRE_NEWLINE_ANYCRLF = 5242880
+integer(kind=c_int), parameter, public :: PCRE_NEWLINE_CR = 1048576
+integer(kind=c_int), parameter, public :: PCRE_NEWLINE_CRLF = 3145728
+integer(kind=c_int), parameter, public :: PCRE_NEWLINE_LF = 2097152
+integer(kind=c_int), parameter, public :: PCRE_NO_AUTO_CAPTURE = 4096
+integer(kind=c_int), parameter, public :: PCRE_NO_AUTO_POSSESS = 131072
+integer(kind=c_int), parameter, public :: PCRE_NO_START_OPTIMIZE = 67108864
+integer(kind=c_int), parameter, public :: PCRE_NO_UTF16_CHECK = 8192
+integer(kind=c_int), parameter, public :: PCRE_NO_UTF32_CHECK = 8192
+integer(kind=c_int), parameter, public :: PCRE_NO_UTF8_CHECK = 8192
+integer(kind=c_int), parameter, public :: PCRE_UCP = 536870912
+integer(kind=c_int), parameter, public :: PCRE_UNGREEDY = 512
+integer(kind=c_int), parameter, public :: PCRE_UTF16 = 2048
+integer(kind=c_int), parameter, public :: PCRE_UTF32 = 2048
+integer(kind=c_int), parameter, public :: PCRE_UTF8 = 2048
+
 end module fortran_pcre
