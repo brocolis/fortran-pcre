@@ -5,5 +5,8 @@ author = "Carlos Une"
 maintainer = "brocolis@eml.cc"
 copyright = "2021 Carlos Une"
 
+[build]
+link = "pcre"
+
 [library]
 source-dir="src"
